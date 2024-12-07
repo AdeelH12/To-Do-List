@@ -1,0 +1,92 @@
+/* Styles for the To-Do List */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.to-do-list {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+}
+
+.to-do-list h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+.to-do-list input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.to-do-list button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.to-do-list button:hover {
+    background: #0056b3;
+}
+
+.to-do-list ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.to-do-list li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+.to-do-list li:hover {
+    transform: translateX(5px);
+}
+
+.to-do-list li button {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    background: #dc3545;
+    color: #fff;
+}
+
+.to-do-list li button:nth-child(2) {
+    background: #28a745;
+}
+
+.to-do-list li button:nth-child(3) {
+    background: #ffc107;
+}
+
+.to-do-list li button:hover {
+    opacity: 0.9;
+}
